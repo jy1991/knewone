@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+/* 样式初始化 */
+*{margin:0px; padding:0px; 
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */}}
+img{border:0px}
+a{text-decoration:none}
+ul li{list-style:none}
+body,h2,h3,h4,h5,h6,span{font:12px/1.5 Helvetica, Arial, "Microsoft YaHei", sans-serif; color:#666}
+@font-face{font-family:"orbitron-bold"; src:url(orbitron-bold.otf)}/*引入logo字体*/
+@font-face{font-family:"icon"; src:url(icon.otf)}/*引入icon字体*/
+
+/* 预定义样式 */
+.w1000{width:1000px; margin:0 auto}
+.fl{float:left}
+.fr{float:right}
+.cb{clear:both}
+.bo{border:1px solid red}
+.mt15{margin-top:15px}
+.m0a{margin:0 auto}
+.ta{text-align:center}
+.pr{position:relative}
+.body{height:3200px; background-color:#ebecee; }
+.pl15{padding-left:15px}
+.pr{position:relative}
+.pa{position:absolute}
+.ob{font-family: "orbitron-bold"}
+.my{font-family: "Microsoft YaHei"}
+.z1{z-index:1;}
+.z2{z-index:2;}
+.z3{z-index:3;}
+.z4{z-index:4;}
+.ov{overflow:hidden}
+
+
+@media screen 
+{
+
+/* header */
+#header
+{ 
+ width:100%;
+ max-height:45px;
+ background:#3a3c3e; 
+ box-shadow: 0 1px 5px rgba(2,2,2,0.5);
+ position:absolute;
+ left:0px;
+ top:0px;
+ position:fixed;
+ z-index:1000;
+}
+#header .navbar {
+ height:45px;
+ overflow:hidden;
+}
+#header .icon img{margin-top:11px; margin-left:3px}
+#header .navbar .nav-header
+{
+  margin-left:10px;
+  height:45px;
+  font-family: "orbitron-bold";
+  font-size: 18px;
+  line-height: 45px;
+  vertical-align: middle;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-right:10px;
+}
+#header .navbar  a{color:#ccc; }
+#header .navbar  .nav-header a{color:#47b2e2;}
+#header .navbar  a:hover{color: #fff}
+#header .navbar .nav-list
+{
+  min-width:510px; 
+  margin-left:4px;
+}
+#header .navbar .nav-list li{
+   float:left;
+   width:55px;
+   height:45px;
+   text-align:center;
+   margin:0px;
+   padding:0px;
+   overflow:hidden;
+}
+#header .navbar .nav-list .underline
+{
+  border-bottom:2px solid #47b2e2; 	
+}
+#header .navbar .nav-list li .trangle{color:#eee}
+#header .navbar .nav-list li a
+{
+   line-height:46px;
+   font-size:1.2em;
+   color: #eee;
+}
+#header .navbar .nav-list .product{width:70px; margin-left:6px; margin-right:4px}
+#header .navbar .nav-list .share{width:90px; margin-left:10px}
+#header .navbar .nav-list li[class*="change"] a:hover{color: #47b2e2}
+#header .navbar .nav-list li .trangle:hover{color:#47b2e2}
+#header .navbar .nav-list li a .trangle:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e004";
+   margin-left:8px;
+}
+#header .navbar .nav-list li a .crossline:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e005";
+   margin-right:12px;
+   color:#47b2e2;
+}
+#navbar_search {width:180px; height:45px;}
+#navbar_search .search
+{
+  width:100%;
+  height:100%;
+  padding:5px 20px 5px 10px;
+  background:#5e6775;	
+}
+#navbar_search .search .form-control
+{
+  width:120px;
+  height:35px;
+  border:none;
+  background:#5e6775;
+  outline: none;
+  color:#47b2e2;
+  font-size:1.4em;	
+}
+#navbar_search .search .search-icon
+{
+  height:40px;
+  line-height:40px;
+}
+#navbar_search .search .search-icon:before {
+  font-size:1.4em;
+  font-family: "icon";
+  content: "\e002";
+  color:#999;
+}
+#header .navbar .navbar_login{width:90px; height:45px; margin-left:20px; text-align:center; line-height:45px; font-size:1.6em;}
+#header .navbar .navbar_login .icon{color:#eee; margin-left:-18px;}
+#header .navbar .navbar_login .icon:before {
+  font-family: "icon";
+  content: "\e001";
+  margin-right:18px;
+}
+#header .navbar .navbar_login .icon:hover{color:#fff}
+/* header */
+.fill{width:100%; height:75px;}
+.container{width:1116px; height:auto; padding:15px;}
+.container #main{width:704px; height:auto; background:#fafafa; border-radius:14px; box-shadow:0px 0px 0px 0px #ccc; float:left;}
+.container #main .thing_header{width:648px; height:84px; padding:21px 28px 28px 28px;}
+.container #main .thing_header h1{width:648px; font-size:2em; color:#888; height:31px; display:block;}
+.container #main .thing_header h5{width:648px; height:32px; font-style:normal; display:block; margin-top:15px;}
+.container #main .nav{width:704px; height:40px; margin-top:28px;}
+.container #main .nav ul{width:704px; height:40px; display:block;}
+.container #main .nav ul li{width:176px; height:38px; padding:10px 15px 8px 15px; margin-bottom:2px; float:left; display:block; text-align:center; font-size:1.2em; color:#999;}
+.container #main .nav ul li:hover{background:#fff;}
+#banner{width:704px; height:528px; background:#fff; position:relative; margin-top:-2px;}
+#banner img{width:704px; height:528px; }
+#banner .box{width:704px; height:528px; position:relative}
+#banner .btnLeft{width:60px; height:60px; position:absolute; left:0px; top:220px; background:url(../images/shop/btnLeft.png) no-repeat 0px 0px; z-index:2;}
+#banner .btnRight{width:60px; height:60px; position:absolute; right:0px; top:220px; background:url(../images/shop/btnRight.png) no-repeat 0px 0px;z-index:2;}
+#banner img{width:100%; position:absolute; left:0px; top:0px; opacity:0; filter:alpha(opacity=0);}
+#banner .page{width:126px; height:60px; position:absolute; 
+top:468px; left:80px;}
+#banner .page a{display:inline-block; width:30px; height:30px; margin:0px 6px; float:left; color:#47b2e2; text-decoration:none; text-align:center; line-height:30px; background:url(../images/shop/page.png) no-repeat; z-index:1000;}
+#banner .page .active{background:url(../images/shop/active.png) no-repeat; color:#fff;}
+#main .bar{width:704px; height:89px; overflow:hidden;}
+#main .author{width:704px; height:100px; padding-bottom:35px; background:#fff; padding-top:35px;}
+#main .author .author_name{width:244px; height:40px; padding:0px 28px 0px 93px; border-left:solid 3px #47b2e2; background:#fafafa; position:relative; line-height:40px; float:left;}
+#main .author .author_name img{width:50px; height:50px; display:block; border-radius:50px; position:absolute; top:-4px; left:23px;}
+#main .author .author_name{color:#777; font-size:1.2em; letter-spacing:1px;}
+#main .author .error{width:68px; height:38px; padding:0px 20px; background:#47b2e2; color:#fff; font-size:1.2em; text-align:center; line-height:38px; float:right;}
+.container #main .content{width:704px; height:204px; overflow:hidden; background:#fff;}
+.container #main .content p{width:640px; height:100%; font-size:1.4em; color:#777; margin:0 auto; line-height:40px; }
+.container #main .footer{width:704px; height:39px; background:#fff; border-top:dashed 1px #ccc; box-shadow:0px 2px 4px 3px rgba(0,0,0,0.1);}
+.container #main .footer span{width:80px; height:40px; margin:0 auto; text-align:center; line-height:40px; font-size:1.4em; color:#777; display:block;}
+.container #main .footer .lookall:hover{color:#47b2e2; cursor:pointer;}
+.container #side{width:352px; height:1000px; float:right;}
+.container #side .shop{width:352px; height:260px; padding:28px 21px 28px 21px; background:#fafafa; border-radius:14px;}
+.container #side .shop .header{width:310px; height:34px; margin:0 auto;}
+.container #side .shop .header .price{font-size:2em; color:#777;}
+.container #side .shop .buy_box{width:310px; height:85px; margin-top:10px;}
+.container #side .shop button:hover{cursor:pointer;}
+.container #side .shop .buy_box #new_cart_item{width:310px; height:85px; }
+.container #side .shop .buy_box #new_cart_item #kind{width:308px; height:33px; padding:6px 20px 6px 10px; border:solid 1px #e6e6e6;}
+.container #side .shop .buy_box #new_cart_item #buy_number{width:98px; height:33px; padding:6px 12px 6px 12px; float:left; margin-top:12px;  border:solid 1px #e6e6e6;}
+.container #side .shop .buy_box #new_cart_item .buy_max{width:134px; height:35px; float:right; text-align:center; line-height:35px; font-size:1.2em; margin-top:12px; font-style:italic;}
+.container #side .shop .buy_box #new_cart_item .buy_max span{color:#47b2e2; font-style:italic; font-weight:bold; font-size:1.2sem;}
+.container #side .shop .buy_btn{width:200px; height:32px; border-radius:14px; background:#ef7e4b; color:#fff; font-size:1.2em; border:none; margin-top:6px; letter-spacing:2px; float:left;}
+.container #side .shop .buy_btn:hover{background:#ee6d34}
+.container #side .shop .contact{width:94px; height:32px; padding:0px 10px; float:right; background:#47b2e2; sborder:none; margin-top:6px; letter-spacing:2px; border-radius:14px; color:#fff; font-size:1.2em; border:none;}
+.container #side .merchant{width:352px; height:56px; padding:18px 21px; background:#f7f7f7; display:block; margin-top:-40px; line-height:20px; font-size:1.2em; color:#777; text-align:center; border-top:solid 1px #eee;}
+.container #side .merchant span{color:#ccc; font-size:1em;}
+}
+
+
+@media screen and (min-width:1200px)  
+{
+
+/* header */	
+#header
+{ 
+ width:100%;
+ max-height:45px;
+ background:#3a3c3e; 
+ box-shadow: 0 1px 5px rgba(2,2,2,0.5);
+ position:absolute;
+ left:0px;
+ top:0px;
+ position:fixed;
+ z-index:1000;
+}
+#header .navbar {
+  height:45px;
+  overflow:hidden;
+ }
+#header .icon img{margin-top:11px; margin-left:3px}
+#header .navbar .nav-header
+{
+  
+  height:45px;
+  margin-left:10px;
+  font-family: "orbitron-bold";
+  font-size: 18px;
+  line-height: 45px;
+  cvertical-align: middle;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-right:10px;
+}
+#header .navbar  a{color: #ccc;}
+#header .navbar  .nav-header a{color:#47b2e2}
+#header .navbar  a:hover{color: #fff}
+#header .navbar .nav-list li{
+   float:left;
+   width:60px;
+   height:45px;
+   text-align:center;
+   margin-left:8px;
+   padding:0px;
+   overflow:hidden;
+}
+#header .navbar .nav-list .underline
+{
+  border-bottom:2px solid #47b2e2; 	
+}
+#header .navbar .nav-list li a
+{
+   line-height:46px;
+   font-size:1.2em;
+   color: #eee;
+}
+#header .navbar .nav-list li a span{font-size:1em}
+#header .navbar .nav-list .product{width:70px; margin-left:12px; margin-right:4px}
+#header .navbar .nav-list .share{width:100px; margin-left:12px}
+#header .navbar .nav-list li[class*="change"] a:hover{color: #47b2e2}
+#header .navbar .nav-list li .trangle{color:#eee}
+#header .navbar .nav-list li .trangle:hover{color:#47b2e2}
+#header .navbar .nav-list li a .trangle:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e004";
+   margin-left:12px;
+}
+#header .navbar .nav-list li a .crossline:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e005";
+   margin-right:12px;
+   color:#47b2e2;
+}
+
+/* header */
+
+}
+
+

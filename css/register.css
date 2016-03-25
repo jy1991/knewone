@@ -1,0 +1,174 @@
+/*-----Demo Styles IMPORTANT - YOU CAN REMOVE THE FOLLOWING STYLES WHEN USING IN YOUR PROJECTS -----*/
+@font-face{font-family:"orbitron-bold"; src:url(orbitron-bold.otf)}
+body {
+	margin:0;
+	outline:none;
+	font-size:12px;
+}
+
+#login2  .register {
+	display:none;
+	position: absolute;
+	z-index:1000;
+	top:100px;;
+	right:380px;
+	position:fixed;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+	-moz-box-shadow:  0 2px 4px 0 rgba(0,0,0,.4);
+	box-shadow:  0 2px 4px 0 rgba(0,0,0,.4);
+	margin-top:30px;
+}
+#login2 .register  {
+	border:solid 1px #ccc;
+	width:600px;
+	height:350px;
+	padding:25px 30px 0px 30px;
+	border-radius:16px;
+	background: #f6f6f6;
+	clear:both;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+}
+
+#login2 .register .title{width:538px; height:26px; font-size:1.8em; color:#999; display:block;}
+
+#login2 .register .main{width:548px; height:60px; margin:0 auto; margin-top:16px;}
+
+#login2 .register .group{width:468px; height:30px; padding:0px 35px;}
+
+#login2 .register .signout {
+	background: url(../images/arrow.gif) no-repeat right #fff;
+	padding:10px 25px 10px 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#256483;
+	text-decoration:none;
+	margin-left:272px;
+	-webkit-border-radius: .3em;
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+}
+#login2 .register .signout:hover {
+	background: url(../images/arrow.hover.gif) no-repeat right #b5ccde;
+	color:#fff;
+}
+
+#login2 .register .signoutclick {
+	background: url(../images/arrow.clicked.gif) no-repeat right #d7e5ee;
+	padding:10px 25px 10px 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#256483;
+	text-decoration:none;
+	margin-left:272px;
+	-webkit-border-radius: .3em .3em 0 0;
+	-moz-border-radius: .3em .3em 0 0;
+	border-radius: .3em .3em 0 0;
+}
+#login2 .register .signoutclick:hover {
+	background: url(../images/arrow.clicked.gif) no-repeat right #d7e5ee;
+}
+#login2 .register .footer2{width:518px; height:80px;  border-top:solid 1px #ccc; margin-top:100px;}
+s#login2 .register .footer2 .test{width:240px; height:60px; font-size:2em; color:#97ceec; line-height:80px;  text-align:center; background:none; border:none; box-shadow:none;}
+#login2 .register .footer2  .name{font-family:"orbitron-bold"; color:#97ceec; font-size:1.2em;}
+#login2 .register .submit {
+	display:block;
+	width:178px;
+	height:32px;
+	padding:0px 20px;
+	border:solid 1px #97ceec;
+	background:#97ceec;
+	font-family:"微软雅黑";
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	border-radius:12px;
+	margin:0 auto;
+	margin-top:12px;
+}
+#login2 .register .submit:hover {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffc800), to(#e89900));
+	background: -moz-linear-gradient(top, #ffc800, #e89900);
+ 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc800', endColorstr='#e89900');
+	cursor:pointer;
+}
+#login2 .register input {
+	border:solid 1px #ccc;
+	padding-left:12px;
+	padding-right:30px;
+	background:#fff;
+	width:266px;
+	height:44px;
+	-webkit-border-radius: .3em;
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#666;
+}
+
+#login2 .register input:focus {
+	border:solid 1px #ebc77e;
+	padding-left:12px;
+	padding-right:30px;
+	background: #f8f3c7;
+	-webkit-transition:background .2s ease-in;
+   -moz-transition:background .2s ease-in;
+   -o-transition:background .2s ease-in;
+   transition:background .2s ease-in;
+}
+
+
+#login2 .register .group .remember {
+	width:200px;
+	height:20px;
+	padding-left:100px;
+	float:left;
+	display:inline-block;
+}
+#login2 .register .group  .forget2{width:100px; height:20px; float:right; display:inline-block; padding-right:20px;}
+#login2 .register .group  .forget2 a{color:#79acd9; text-decoration:none; font-size:1em; width;100px; height:20px; border:none; background:none; box-shadow:none; margin-top:-16px;}
+#login2 .register .group  .action{width:538px; height:34px;}
+#login2 .register .checkbox {
+	margin:0 5px 0 0;
+	padding:0;
+	width:16px;
+	height:16px;
+	background:none;
+	border:none;
+	float:left;
+}
+#login2 .register p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:12px;
+	color:#666;
+	clear:both;
+}
+#login2 .register p a {
+	color:#0784b3;
+	font-weight:bold;
+	text-decoration:none;
+}
+#login2 .register p a:hover {
+	color:#127296;
+}
+
+.register .tooltip span {
+	display:none;
+	margin-left:8px;
+}
+.register .tooltip:hover span {
+	display:inline;
+	position:absolute;
+	color:#fff;
+	padding:6px 8px 6px 20px;
+	font-size:12px;
+	opacity:0.8;
+	font-weight:bold;
+}

@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+/* 样式初始化 */
+*{margin:0px; padding:0px; 
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */}}
+img{border:0px}
+a{text-decoration:none}
+ul li{list-style:none}
+body,h2,h3,h4,h5,h6,span{font:12px/1.5 Helvetica, Arial, "Microsoft YaHei", sans-serif; color:#666}
+@font-face{font-family:"orbitron-bold"; src:url(orbitron-bold.otf)}/*引入logo字体*/
+@font-face{font-family:"icon"; src:url(icon.otf)}/*引入icon字体*/
+
+/* 预定义样式 */
+.w1000{width:1000px; margin:0 auto}
+.fl{float:left}
+.fr{float:right}
+.cb{clear:both}
+.bo{border:1px solid red}
+.mt15{margin-top:15px}
+.m0a{margin:0 auto}
+.ta{text-align:center}
+.pr{position:relative}
+.pl15{padding-left:15px}
+.pr{position:relative}
+.pa{position:absolute}
+.ob{font-family: "orbitron-bold"}
+.my{font-family: "Microsoft YaHei"}
+.z1{z-index:1;}
+.z2{z-index:2;}
+.z3{z-index:3;}
+.z4{z-index:4;}
+.ov{overflow:hidden}
+
+
+@media screen 
+{
+
+/* header */
+#header
+{ 
+ width:100%;
+ max-height:45px;
+ background:#3a3c3e; 
+ box-shadow: 0 1px 5px rgba(2,2,2,0.5);
+ position:absolute;
+ left:0px;
+ top:0px;
+ position:fixed;
+ z-index:999;
+}
+#header .navbar {
+ height:45px;
+ overflow:hidden;
+}
+#header .icon img{margin-top:11px; margin-left:3px}
+#header .navbar .nav-header
+{
+  margin-left:10px;
+  height:45px;
+  font-family: "orbitron-bold";
+  font-size: 18px;
+  line-height: 45px;
+  vertical-align: middle;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-right:10px;
+}
+#header .navbar  a{color:#ccc; }
+#header .navbar  .nav-header a{color:#47b2e2;}
+#header .navbar  a:hover{color: #fff}
+#header .navbar .nav-list
+{
+  min-width:510px; 
+  margin-left:4px;
+}
+#header .navbar .nav-list li{
+   float:left;
+   width:55px;
+   height:45px;
+   text-align:center;
+   margin:0px;
+   padding:0px;
+   overflow:hidden;
+}
+#header .navbar .nav-list .underline
+{
+  border-bottom:2px solid #47b2e2; 	
+}
+#header .navbar .nav-list li .trangle{color:#eee}
+#header .navbar .nav-list li a
+{
+   line-height:46px;
+   font-size:1.2em;
+   color: #eee;
+}
+#header .navbar .nav-list .product{width:70px; margin-left:6px; margin-right:4px}
+#header .navbar .nav-list .share{width:90px; margin-left:10px}
+#header .navbar .nav-list li[class*="change"] a:hover{color: #47b2e2}
+#header .navbar .nav-list li .trangle:hover{color:#47b2e2}
+#header .navbar .nav-list li a .trangle:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e004";
+   margin-left:8px;
+}
+#header .navbar .nav-list li a .crossline:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e005";
+   margin-right:12px;
+   color:#47b2e2;
+}
+#navbar_search {width:180px; height:45px;}
+#navbar_search .search
+{
+  width:100%;
+  height:100%;
+  padding:5px 20px 5px 10px;
+  background:#5e6775;	
+}
+#navbar_search .search .form-control
+{
+  width:120px;
+  height:35px;
+  border:none;
+  background:#5e6775;
+  outline: none;
+  color:#47b2e2;
+  font-size:1.4em;	
+}
+#navbar_search .search .search-icon
+{
+  height:40px;
+  line-height:40px;
+}
+#navbar_search .search .search-icon:before {
+  font-size:1.4em;
+  font-family: "icon";
+  content: "\e002";
+  color:#999;
+}
+#header .navbar .navbar_login{width:90px; height:45px; margin-left:20px; text-align:center; line-height:45px; font-size:1.6em;}
+#header .navbar .navbar_login .icon{color:#eee; margin-left:-18px;}
+#header .navbar .navbar_login .icon:before {
+  font-family: "icon";
+  content: "\e001";
+  margin-right:18px;
+}
+#header .navbar .navbar_login .icon:hover{color:#fff}
+/* header */
+.fill{height:65px;}
+/* banner */
+/*
+#banner .box{width:100%; position:relative}
+#banner .btnLeft{width:60px; height:60px;; position:absolute; left:0px; bottom:0px;  z-index:100; background:red; margin:100px}
+#banner .btnRight{width:60px; height:60px; position:absolute; right:0px; bottom:-200px; background:url(../images/shop/btnRight.png) no-repeat 0px 0px; z-index:100;}
+#banner img{width:100%; position:absolute; left:0px; top:0px; opacity:0; filter:alpha(opacity=0);}
+#banner .page{width:126px; height:60px; position:absolute; 
+bottom:-380px; left:80px;}
+#banner .page a{display:inline-block; width:30px; height:30px; margin:0px 6px; float:left; color:#47b2e2; text-decoration:none; text-align:center; line-height:30px; background:url(../images/shop/page.png) no-repeat; z-index:1000;}
+#banner .page .active{background:url(../images/shop/active.png) no-repeat; color:#fff;}
+*/
+
+/* banner */
+
+/* recommend */
+#recommend{width:85%; height:207px;}
+#recommend .title{width:100%; height:36px; font-size:2em; color:#999; margin-bottom:12px; overflow:hidden}
+#recommend .rec_bar{width:100%; height:161px; overflow:hidden}
+#recommend .rec_bar li{width:171px; height:160px; padding:10px; margin-right:22px;  border-bottom:solid 1px #ccc;}
+#recommend .rec_bar li:last-child{margin-right:0px;}
+#recommend .rec_bar li .img{width:151px; height:113px}
+#recommend .rec_bar li img{width:100%; height:100%}
+#recommend .rec_bar li .descript{width:100%; height:16px; overflow:hidden; margin-top:10px; text-align:center; }
+#recommend .rec_bar li .descript a{color:#999}
+/* recommend */
+
+#shop{width:85%; height:46px; font-size:2em; color:#999; margin-top:20px; margin-bottom:12px; overflow:hidden}
+}
+
+/* exploder */
+#exploder{width:85%; height:auto; position:relative; }
+#exploder .left{width:21%;}
+#exploder .list{width:100%; height:515px; padding:10px; background:#fafafa; }
+#exploder .list h4{width:100%; height:34px; margin:10px 0px; padding-bottom:10px; font-size:1.2em; color:#999; border-bottom:solid 1px #ccc}
+#exploder .list .category{width:100%; padding-left:15px; margin-top:20px;}
+#exploder .list .category .radio {
+	width: 90px;
+	height:16px;
+	position: relative;
+	margin-bottom:15px;
+	color:#999;
+}
+#exploder .list .category .radio:hover label{ color:#fff; background:#47b2e2; opacity:1;}
+#exploder .list .category .radio:hover{color:#47b2e2;}
+#exploder .list .category .radio label {
+	cursor: pointer;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 0;
+  	left: 0;
+	background: #eee;
+	border:1px solid #ddd;
+	overflow:hidden;
+}
+.radio label:after {
+	color:#ddd;
+	position: absolute;
+	font-size:1.8em;
+	background: transparent;
+	top:-2px;
+	left:0px;
+	font-family: "icon";
+    content: "\e011";
+}
+.radio label:hover::after {opacity: 1;}
+
+.radio .nav_active + label:after {
+	opacity: 1;
+	color:#fff;
+	background:#47b2e2;
+	width:16px;
+}
+
+#exploder .price{width:100%; height:235px; padding:10px; background:#fafafa; margin-top:20px;}
+#exploder .price h4{width:100%; height:34px; margin:10px 0px; padding-bottom:10px; font-size:1.2em; color:#999; border-bottom:solid 1px #ccc}
+#exploder .price .category{width:100%; padding-left:15px; margin-top:20px; height:160px;}
+#exploder .price .category a:hover label{ color:#fff; background:#47b2e2;}
+#exploder .price .category a:hover{color:#47b2e2;}
+#exploder .price .category li{height:20px; display:block; margin-bottom:10px; position:relative;}
+#exploder .price .category li a{color:#999; font-size:1.2em}
+#exploder .price .category li a label {
+	cursor: pointer;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 4px;
+  	left: 5px;
+	background: #eee;
+	border:1px solid #ddd;
+	overflow:hidden;
+}
+#exploder .price .category li a label:before {
+	color:#ddd;
+	position: absolute;
+	font-size:1.8em;
+	background: transparent;
+	top:-4px;
+	left:-1px;
+	font-family: "icon";
+    content: "\e011";
+}
+#exploder .price .category li a label:hover::after {opacity: 1;}
+
+#exploder #products{width:79%; height:auto; padding-left:15px; position:relative;}
+#exploder #products .pin{width:269px; height:auto; margin-right:15px; background:#fff; padding-top:15px; padding-left:12px; padding-right:12px; float:left; position:relative;}
+#exploder #products .pin .box{width:269px; height:auto;}
+#exploder #products .pin .box img{width:calc(100% - 24px);}
+#exploder #products .pin .content{width:100%; height:49px; padding:14px; text-align:center; white-space: nowrap; text-overflow: ellipsis; overflow:hidden}
+#exploder #products .pin .content h4{font-size:1em;}
+#exploder #products .pin .info{width:100%; height:20px; padding:0px 14px 14px 22px; display:block; margin-bottom:4px;}
+#exploder #products .pin .info span{font-size:1em; color:#666;}
+/* exploder */
+@media screen and (min-width:1200px)  
+{
+
+/* header */	
+#header
+{ 
+ width:100%;
+ max-height:45px;
+ background:#3a3c3e; 
+ box-shadow: 0 1px 5px rgba(2,2,2,0.5);
+ position:absolute;
+ left:0px;
+ top:0px;
+ position:fixed;
+ z-index:1000;
+}
+#header .navbar {
+  height:45px;
+  overflow:hidden;
+ }
+#header .icon img{margin-top:11px; margin-left:3px}
+#header .navbar .nav-header
+{
+  
+  height:45px;
+  margin-left:10px;
+  font-family: "orbitron-bold";
+  font-size: 18px;
+  line-height: 45px;
+  cvertical-align: middle;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-right:10px;
+}
+#header .navbar  a{color: #ccc;}
+#header .navbar  .nav-header a{color:#47b2e2}
+#header .navbar  a:hover{color: #fff}
+#header .navbar .nav-list li{
+   float:left;
+   width:60px;
+   height:45px;
+   text-align:center;
+   margin-left:8px;
+   padding:0px;
+   overflow:hidden;
+}
+#header .navbar .nav-list .underline
+{
+  border-bottom:2px solid #47b2e2; 	
+}
+#header .navbar .nav-list li a
+{
+   line-height:46px;
+   font-size:1.2em;
+   color: #eee;
+}
+#header .navbar .nav-list li a span{font-size:1em}
+#header .navbar .nav-list .product{width:70px; margin-left:12px; margin-right:4px}
+#header .navbar .nav-list .share{width:100px; margin-left:12px}
+#header .navbar .nav-list li[class*="change"] a:hover{color: #47b2e2}
+#header .navbar .nav-list li .trangle{color:#eee}
+#header .navbar .nav-list li .trangle:hover{color:#47b2e2}
+#header .navbar .nav-list li a .trangle:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e004";
+   margin-left:12px;
+}
+#header .navbar .nav-list li a .crossline:after
+{
+   font-size:1.2em;
+   font-family: "icon";
+   content: "\e005";
+   margin-right:12px;
+   color:#47b2e2;
+}
+
+/* header */
+
+
+}
+@media screen and (max-width:800px)
+{
+  #exploder .left{display:none}
+  #exploder #products{width:100%; margin:0 auto;}  	
+}
+@media screen and (max-width:1318px)
+{
+  #exploder{width:95%;}
+}
+
